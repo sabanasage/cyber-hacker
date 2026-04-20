@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-HACKER - Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 14px;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .signin-container {
+            max-width: 450px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .signin-btn {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 30px;
+        }
+
+        .forgot {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .forgot a {
+            color: #006400;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .no-account {
+            text-align: center;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .no-account a {
+            color: #006400;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="logo">CYBER-HACKER</div>
+            <div class="tagline">confidentiality is our confidence</div>
+        </div>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="signin.html">COURSES</a>
+            <a href="signup.html">SIGN UP</a>
+        </nav>
+    </header>
+
+    <div class="signin-container">
+        <h2>sign in here:</h2>
+        
+        <label for="email">Enter email address:</label>
+        <input type="email" id="email" placeholder="">
+
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" placeholder="">
+
+        <button class="signin-btn"><a href="signin.html">SIGN IN</a></button>
+
+        <div class="forgot">
+            Forget password 
+            <a href="verfication.html">click here</a>
+        </div>
+
+        <div class="no-account">
+            i don't have account 
+            <a href="signup.html">click here</a>
+        </div>
+    </div>
+
+</body>
+</html>

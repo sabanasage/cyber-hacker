@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-HACKER - Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 14px;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .courses-section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .courses-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .courses-title h1 {
+            display: inline-block;
+            background-color: white;
+            padding: 12px 40px;
+            border: 2px solid #006400;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .course-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .course-info h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="logo">CYBER-HACKER</div>
+            <div class="tagline">confidentiality is our confidence</div>
+        </div>
+        <nav>
+            <a href="dashboard.html">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="signin.html">LOGOUT</a>
+        </nav>
+    </header>
+
+    <div class="courses-section">
+        <div class="courses-title">
+            <h1>COURSES</h1>
+        </div>
+
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600" alt="Data Sharing">
+                <div class="course-info">
+                    <h3>Data Sharing 20hours</h3>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600" alt="Data Protection">
+                <div class="course-info">
+                    <h3>Data Protection 25 hours garde 1</h3>
+                </div>
+            </div>
+             <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600" alt="Data Protection">
+                <div class="course-info">
+                    <h3>Data Protection 25 hours grade 2</h3>
+                </div>
+            </div>
+             <div class="course-card">
+                <img src="download.jfif"Data Protection">
+                <div class="course-info">
+                    <h3>cyber streams 20 hours</h3>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Data Security Alert">
+                <div class="course-info">
+                    <h3>Data Security Alert 20 hours</h3>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card">
+                <img src="download1.jfif">
+                <div class="course-info">
+                    <h3>Data Cyber Threats 30hours</h3>
+                </div>
+            </div>
+            <!-- Course 5 -->
+            <div class="course-card">
+                <img src="graphic.jfif">
+                <div class="course-info">
+                    <h3>graphic design 30hours</h3>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="course-card">
+                <img src="maintainance.jfif">
+                <div class="course-info">
+                    <h3>computer maintainance 30hours</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        ©copyright reserved 2026  @policies
+    </footer>
+
+</body>
+</html>

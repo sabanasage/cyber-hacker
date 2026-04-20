@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-HACKER - Email Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f0;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .verification-container {
+            max-width: 520px;
+            margin: 100px auto;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .instruction {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 16px;
+            border: 2px solid #006400;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .send-btn {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 14px 50px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .send-btn:hover {
+            background-color: #005000;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CYBER-HACKER</div>
+        <nav>
+            <a href="home.html">HOME</a>
+            
+            <a href="signin.html">BACK</a>
+        </nav>
+    </header>
+
+    <div class="verification-container">
+        <p class="instruction">
+            for account privicies and protection follow the step<br>
+            enter the valid email address for verification
+        </p>
+        
+        <input type="email" class="input-box" placeholder="email adress" id="email">
+        
+        <button class="send-btn" onclick="sendVerification()">SEND</button>
+    </div>
+
+    <footer>
+        ©copyright reserved 2026  @policies
+    </footer>
+
+    <script>
+        function sendVerification() {
+            const email = document.getElementById('email').value.trim();
+            if (email === "") {
+                alert("Please enter your email address");
+            } else if (!email.includes("@")) {
+                alert("Please enter a valid email address");
+            } else {
+                alert("Verification link has been sent to: " + email + "\n\n(For demo purposes only)");
+                // You can later replace this with real backend integration
+            }
+        }
+    </script>
+
+</body>
+</html>

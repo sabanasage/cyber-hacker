@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-HACKER - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f0;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 80px);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 42px;
+            font-weight: bold;
+            color: #006400;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #444;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        .loading {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CYBER-HACKER</div>
+        <nav>
+            <a href="home.html">HOME</a> 
+            <a href="courses.html">COURSES</a>
+             
+            <a href="signin.html">LOGOUT</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="welcome-text">Welcome Back!</div>
+        <p class="subtitle">
+            Your cybersecurity learning journey continues here.<br>
+            Stay safe, stay secure.
+        </p>
+        
+        <div class="loading">Loading your dashboard...</div>
+    </div>
+
+    <footer>
+        ©copyright reserved 2026  @policies
+    </footer>
+
+</body>
+</html>
